@@ -28,5 +28,4 @@ class HelperServiceProvider extends ServiceProvider
             }
         }
     }
-
 }
