@@ -18,6 +18,30 @@ Via Composer
 $ composer require browner12/helpers
 ```
 
+## Setup
+
+Add the service provider to the providers array in  `config/app.php`.
+
+``` php
+'providers' => [
+    browner12\helpers\HelperServiceProvider::class,
+];
+```
+
+## Publishing
+
+You can publish everything at once
+
+``` php
+php artisan vendor:publish --provider="browner12\helpers\HelperServiceProvider"
+```
+
+or you can publish groups individually.
+
+``` php
+php artisan vendor:publish --provider="browner12\helpers\HelperServiceProvider" --tag="config"
+```
+
 ## Usage
 
 ``` php
