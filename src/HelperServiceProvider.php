@@ -16,12 +16,14 @@ class HelperServiceProvider extends ServiceProvider
             Commands\HelperMakeCommand::class,
         ]);
 
-        //include the helpers
-        foreach (glob(app_path() . '/Helpers/*.php') as $filename) {
+        //include the package helpers that are active
+        foreach (config('helpers.active_helpers') as $activeHelper) {
+            require_once(__DIR__ . '/Helpers/' . $activeHelper . '.php');
+        }
 
-            if ($filename != 'HelperServiceProvider.php') {
-                require_once($filename);
-            }
+        //include the custom helpers
+        foreach (glob(app_path() . '/Helpers/*.php') as $filename) {
+            require_once($filename);
         }
     }
 
