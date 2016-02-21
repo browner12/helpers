@@ -23,6 +23,16 @@ return [
     |
     */
     'active_helpers' => [
+        'buttons',
+        'confirm',
+        'datetime',
+        'error',
+        'feedback',
+        'formatter',
+        'hint',
+        'image',
+        'money',
+        'validation',
     ],
 
 ];
