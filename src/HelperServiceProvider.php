@@ -17,7 +17,7 @@ class HelperServiceProvider extends ServiceProvider
         ]);
 
         //include the package helpers that are active
-        foreach (config('helpers.active_helpers') as $activeHelper) {
+        foreach (config('helpers.active_helpers', []) as $activeHelper) {
             require_once(__DIR__ . '/Helpers/' . $activeHelper . '.php');
         }
 
