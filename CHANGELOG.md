@@ -1,22 +1,14 @@
 # Changelog
 
-All Notable changes to `helpers` will be documented in this file.
+All notable changes to `browner12/helpers` will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
-## NEXT - YYYY-MM-DD
+## UNRELEASED
+
+## 1.0.0 - 2016-02-21
 
 ### Added
-- Nothing
+- new helpers package
 
-### Deprecated
-- Nothing
-
-### Fixed
-- Nothing
-
-### Removed
-- Nothing
-
-### Security
-- Nothing
+[unreleased]: https://github.com/browner12/helpers/compare/v1.0.0...HEAD
