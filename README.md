@@ -44,10 +44,15 @@ php artisan vendor:publish --provider="browner12\helpers\HelperServiceProvider" 
 
 ## Usage
 
-``` php
-$skeleton = new League\Skeleton();
-echo $skeleton->echoPhrase('Hello, League!');
+This package comes with some built in helpers that you can choose to use or not. By default all of these helpers are activated for your application. To adjust which helpers are active and which are inactive, open `config/helpers.php` and find the `active_helpers` option. Check the source code to see what functions are included in each helper and what each does.
+
+You can also create your own custom helpers for inclusion in your application. An Artisan generator helps you quickly make new helpers for your application. 
+
+``` sh
+php artisan make:helper MyHelper
 ```
+
+Your custom helper will be placed in `App/Helpers`. Any helper in this directory is automatically loaded by the service provider. Within the helper define your own custom helpers that will be available throughout your application.
 
 ## Change log
 
