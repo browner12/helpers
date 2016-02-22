@@ -3,7 +3,7 @@
 if (!function_exists('datetime')) {
 
     /**
-     * datetime
+     * allows you to easily apply a runtime timezone value to all of your datetimes
      *
      * @param \Datetime $value
      * @param string    $format
@@ -28,6 +28,8 @@ if (!function_exists('datetime')) {
 if (!function_exists('datetimeSpan')) {
 
     /**
+     * allows you to easily
+     *
      * @param \Datetime $start
      * @param \Datetime $end
      * @param string    $startFormat
