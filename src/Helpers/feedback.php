@@ -21,7 +21,7 @@ if (!function_exists('modal')) {
         ];
 
         //flash
-        Session::flash('modal', $modal);
+        session()->flash('modal', $modal);
     }
 }
 
@@ -46,6 +46,6 @@ if (!function_exists('alert')) {
         ];
 
         //flash
-        Session::flash('alert', $alert);
+        session()->flash('alert', $alert);
     }
 }
