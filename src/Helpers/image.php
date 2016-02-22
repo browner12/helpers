@@ -8,13 +8,14 @@ if (!function_exists('image')) {
      * provides default image if empty
      *
      * @param bool|string $url
+     * @param string      $default
      * @return string
      */
-    function image($url = false)
+    function image($url = false, $default = null)
     {
         //no image
         if (!$url) {
-            return '/images/noImage.svg';
+            return ($default) ?: config('helpers.default_image');
         }
 
         //pass through
