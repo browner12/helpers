@@ -5,12 +5,12 @@ if (!function_exists('validation_state')) {
     /**
      * validation state helper
      *
-     * @param \Illuminate\Support\MessageBag $errors
-     * @param array|string                   $names
-     * @param string                         $context
+     * @param \Illuminate\Support\ViewErrorBag $errors
+     * @param array|string                     $names
+     * @param string                           $context
      * @return string
      */
-    function validation_state(Illuminate\Support\MessageBag $errors, $names, $context = 'has-danger')
+    function validation_state(Illuminate\Support\ViewErrorBag $errors, $names, $context = 'has-danger')
     {
         //normalize input to array
         if (!is_array($names)) {
