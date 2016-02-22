@@ -7,9 +7,10 @@ if (!function_exists('validation_state')) {
      *
      * @param \Illuminate\Support\MessageBag $errors
      * @param array|string                   $names
+     * @param string                         $context
      * @return string
      */
-    function validation_state($errors, $names)
+    function validation_state(Illuminate\Support\MessageBag $errors, $names, $context = 'has-danger')
     {
         //normalize input to array
         if (!is_array($names)) {
@@ -19,8 +20,11 @@ if (!function_exists('validation_state')) {
         //check if error exists
         foreach ($names as $name) {
             if ($errors->has($name)) {
-                return 'has-danger';
+                return $context;
             }
         }
+
+        //no error
+        return '';
     }
 }
