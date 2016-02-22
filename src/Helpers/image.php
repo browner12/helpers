@@ -6,7 +6,6 @@ if (!function_exists('image')) {
      * image helper
      *
      * provides default image if empty
-     * converts to absolute url
      *
      * @param bool|string $url
      * @return string
@@ -19,8 +18,6 @@ if (!function_exists('image')) {
         }
 
         //pass through
-        else {
-            return '/' . $url;
-        }
+        return '/' . $url;
     }
 }
