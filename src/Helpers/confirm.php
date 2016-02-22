@@ -3,7 +3,7 @@
 if (!function_exists('confirmPostModal')) {
 
     /**
-     *  generate modal to confirm a POST of data
+     * generate modal to confirm a POST of data
      *
      * @param string $id
      * @param string $url
