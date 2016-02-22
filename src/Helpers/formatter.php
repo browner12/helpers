@@ -18,7 +18,9 @@ if (!function_exists('phone')) {
         //area code
         if (strlen($phone) == 10) {
             $phone = '(' . substr($phone, 0, 3) . ') ' . substr($phone, 3, 3) . '-' . substr($phone, 6, 4);
-        } //no area code
+        }
+
+        //no area code
         elseif (strlen($phone) == 7) {
             $phone = substr($phone, 0, 3) . '-' . substr($phone, 3, 4);
         }
@@ -80,11 +82,10 @@ if (!function_exists('formatBytes')) {
         $pow = floor(($bytes ? log($bytes) : 0) / log(1024));
         $pow = min($pow, count($units) - 1);
 
-        // Uncomment one of the following alternatives
+        //calculate bytes
         $bytes /= pow(1024, $pow);
 
-        // $bytes /= (1 << (10 * $pow));
-
+        //return the bytes
         return round($bytes, $precision) . ' ' . $units[$pow];
     }
 }
