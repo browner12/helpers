@@ -13,7 +13,7 @@ if (!function_exists('datetime')) {
     function datetime($value, $format = 'm/d/y', $timezone = null)
     {
         //timezone
-        $timezone = ($timezone) ? $timezone : 'america/chicago';
+        $timezone = ($timezone) ?: config('helpers.default_timezone');
 
         //set timezone
         if ($timezone) {
@@ -38,7 +38,7 @@ if (!function_exists('datetimeSpan')) {
     function datetimeSpan($start, $end, $startFormat, $endFormat, $timezone = null)
     {
         //timezone
-        $timezone = ($timezone) ? $timezone : 'america/chicago';
+        $timezone = ($timezone) ?: config('helpers.default_timezone');
 
         //set timezone
         if ($timezone) {
