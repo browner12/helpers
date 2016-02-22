@@ -13,7 +13,6 @@ return [
     | buttons
     | confirm
     | datetime
-    | error
     | feedback
     | formatter
     | hint
@@ -22,11 +21,11 @@ return [
     | validation
     |
     */
+
     'active_helpers' => [
         'buttons',
         'confirm',
         'datetime',
-        'error',
         'feedback',
         'formatter',
         'hint',
