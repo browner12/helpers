@@ -55,6 +55,22 @@ Your custom helper will be placed in `App/Helpers`, unless you override the defa
 
 By default, the service provider uses the `glob` function to automatically require any PHP files in the 'Helpers' directory. If you prefer a mapper based approach, you may edit the `custom_helpers` in the configuration file, and include the file name of any helpers in your custom directory you wish to activate. Within the helper define your own custom helpers that will be available throughout your application.
 
+``` php
+if (!function_exists('hello')) {
+
+    /**
+     * say hello
+     *
+     * @param string $name
+     * @return string
+     */
+    function hello($name)
+    {
+        return 'Hello ' . $name . '!';
+    }
+}
+```
+
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
