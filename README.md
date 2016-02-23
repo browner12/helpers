@@ -43,7 +43,7 @@ php artisan vendor:publish --provider="browner12\helpers\HelperServiceProvider" 
 
 ## Usage
 
-This package comes with some built in helpers that you can choose to use or not. By default all of these helpers are inactive for your application. To adjust which helpers are active and which are inactive, open `config/helpers.php` and find the `active_helpers` option. Add any helpers you wish to activate to this key. Check the source code to see what functions are included in each helper and what each does.
+This package comes with some built in helpers that you can choose to use or not. By default all of these helpers are inactive for your application. To adjust which helpers are active and which are inactive, open `config/helpers.php` and find the `package_helpers` option. Add any helpers you wish to activate to this key. Check the source code to see what functions are included in each helper and what each does.
 
 You can also create your own custom helpers for inclusion in your application. An Artisan generator helps you quickly make new helpers for your application. 
 
