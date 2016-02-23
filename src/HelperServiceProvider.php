@@ -16,14 +16,36 @@ class HelperServiceProvider extends ServiceProvider
             Commands\HelperMakeCommand::class,
         ]);
 
-        //include the package helpers that are active
-        foreach (config('helpers.active_helpers', []) as $activeHelper) {
-            require_once(__DIR__ . '/Helpers/' . $activeHelper . '.php');
+        //include the active package helpers
+        foreach (config('helpers.package_helpers', []) as $activeHelper) {
+
+            $file = __DIR__ . '/Helpers/' . $activeHelper . '.php';
+
+            if (file_exists($file)) {
+                require_once($file);
+            }
         }
 
-        //include the custom helpers
-        foreach (glob(app_path() . '/Helpers/*.php') as $filename) {
-            require_once($filename);
+        //load custom helpers with a mapper
+        if (count(config('helpers.custom_helpers'))) {
+
+            foreach (config('helpers.custom.helpers') as $customHelper) {
+
+                $file = app_path() . '/' . $this->getHelpersDirectory() . '/' . $customHelper . '.php';
+
+                if(file_exists($file)) {
+                    require_once($file);
+                }
+            }
+        }
+
+        //load custom helpers automatically
+        else {
+
+            //include the custom helpers
+            foreach (glob(app_path() . '/' . $this->getHelpersDirectory() . '/*.php') as $file) {
+                require_once($file);
+            }
         }
     }
 
@@ -38,5 +60,15 @@ class HelperServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/config/helpers.php' => config_path('helpers.php'),
         ], 'config');
+    }
+
+    /**
+     * get the directory the helpers are stored in
+     *
+     * @return mixed
+     */
+    public function getHelpersDirectory()
+    {
+        return config('helpers.directory', 'Helpers');
     }
 }
