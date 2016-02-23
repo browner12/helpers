@@ -53,7 +53,7 @@ php artisan make:helper MyHelper
 
 Your custom helper will be placed in `App/Helpers`, unless you override the default directory in your configuration.
 
-By default, the service provider uses the `glob` function to automatically require any PHP files in the 'Helpers' directory. If you prefer a mapper based approach, you may edit the `custom_helpers` in the configuration file, and include the file name of any helpers in your custom directory you wish to activate. Within the helper define your own custom helpers that will be available throughout your application.
+By default, the service provider uses the `glob` function to automatically require any PHP files in the 'Helpers' directory. If you prefer a mapper based approach, you may edit the `custom_helpers` in the configuration file, and include the file name of any helpers in your custom directory you wish to activate. Within the helper, define your own custom helpers that will be available throughout your application.
 
 ``` php
 if (!function_exists('hello')) {
