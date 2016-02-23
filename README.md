@@ -43,7 +43,7 @@ php artisan vendor:publish --provider="browner12\helpers\HelperServiceProvider" 
 
 ## Usage
 
-This package comes with some built in helpers that you can choose to use or not. By default all of these helpers are inactive for your application. To adjust which helpers are active and which are inactive, open `config/helpers.php` and find the `active_helpers` option. Check the source code to see what functions are included in each helper and what each does.
+This package comes with some built in helpers that you can choose to use or not. By default all of these helpers are inactive for your application. To adjust which helpers are active and which are inactive, open `config/helpers.php` and find the `active_helpers` option. Add any helpers you wish to activate to this key. Check the source code to see what functions are included in each helper and what each does.
 
 You can also create your own custom helpers for inclusion in your application. An Artisan generator helps you quickly make new helpers for your application. 
 
@@ -51,9 +51,9 @@ You can also create your own custom helpers for inclusion in your application. A
 php artisan make:helper MyHelper
 ```
 
-Your custom helper will be placed in `App/Helpers`, unless you override the default directory in your configuration.
+Your custom helper will be placed in `app/Helpers`, unless you override the default directory in your configuration.
 
-By default, the service provider uses the `glob` function to automatically require any PHP files in the 'Helpers' directory. If you prefer a mapper based approach, you may edit the `custom_helpers` in the configuration file, and include the file name of any helpers in your custom directory you wish to activate. Within the helper, define your own custom helpers that will be available throughout your application.
+By default, the service provider uses the `glob` function to automatically require any PHP files in the 'Helpers' directory. If you prefer a mapper based approach, you may edit the `custom_helpers` in the configuration file, and include the file name of any helpers in your custom directory you wish to activate. Within the new helper, define your own custom functions that will be available throughout your application.
 
 ``` php
 if (!function_exists('hello')) {
