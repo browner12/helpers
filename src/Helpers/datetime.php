@@ -12,6 +12,11 @@ if (!function_exists('datetime')) {
      */
     function datetime($value, $format = 'm/d/y', $timezone = null)
     {
+        //null value
+        if (is_null($value)) {
+            return null;
+        }
+
         //timezone
         $timezone = ($timezone) ?: config('helpers.default_timezone');
 
@@ -28,7 +33,7 @@ if (!function_exists('datetime')) {
 if (!function_exists('datetimeSpan')) {
 
     /**
-     * allows you to easily
+     * allows you to easily apply a runtime timezone value to a datetime span
      *
      * @param \Datetime $start
      * @param \Datetime $end
@@ -39,6 +44,11 @@ if (!function_exists('datetimeSpan')) {
      */
     function datetimeSpan($start, $end, $startFormat, $endFormat, $timezone = null)
     {
+        //null start or end
+        if (is_null($start) || is_null($end)) {
+            return null;
+        }
+
         //timezone
         $timezone = ($timezone) ?: config('helpers.default_timezone');
 
