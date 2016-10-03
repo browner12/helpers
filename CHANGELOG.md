@@ -6,6 +6,11 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## [UNRELEASED]
 
+## [1.0.2] - 2016-10-02
+
+### Changed
+- dropped PHP version requirement to 5.5.9 (but **please** still use >= 5.6)
+
 ## [1.0.1] - 2016-08-30
 
 ### Fixed
@@ -16,5 +21,6 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 ### Added
 - new helpers package
 
-[unreleased]: https://github.com/browner12/helpers/compare/v1.0.1...HEAD
+[unreleased]: https://github.com/browner12/helpers/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/browner12/helpers/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/browner12/helpers/compare/v1.0.0...v1.0.1
