@@ -152,7 +152,7 @@ if (!function_exists('deleteButton')) {
         $return .= $title;
         $return .= '" data-message="';
         $return .= $message;
-        $return .= '" title="';
+        $return .= '" tabindex="0" title="';
         $return .= $buttonTitle;
         $return .= '"><i class="fa fa-times"></i></a>';
 
@@ -181,7 +181,7 @@ if (!function_exists('cancelButton')) {
         $return .= $title;
         $return .= '" data-message="';
         $return .= $message;
-        $return .= '" title="';
+        $return .= '" tabindex="0" title="';
         $return .= $buttonTitle;
         $return .= '"><i class="fa fa-minus-square"></i></a>';
 
@@ -221,7 +221,7 @@ if (!function_exists('myButton')) {
         $return .= $title;
         $return .= '" data-message="';
         $return .= $message;
-        $return .= '" title="';
+        $return .= '" tabindex="0" title="';
         $return .= $buttonTitle;
         $return .= '"><i class="fa fa-minus-square"></i></a>';
 
