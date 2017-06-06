@@ -19,6 +19,6 @@ if (!function_exists('image')) {
         }
 
         //pass through
-        return '/' . $url;
+        return '/' . ltrim($url, '/');
     }
 }
