@@ -9,8 +9,8 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 ## [1.1.1] - 2017-07-16
 
 ### Changed
-- remove temporary variables 32a27c90ff18d1ee829ff45edf2bf3b959de7e1d
-- shorten array normalization 32a27c90ff18d1ee829ff45edf2bf3b959de7e1d
+- remove temporary variables [32a27c9](https://github.com/browner12/helpers/commit/32a27c90ff18d1ee829ff45edf2bf3b959de7e1d)
+- shorten array normalization [32a27c9](https://github.com/browner12/helpers/commit/32a27c90ff18d1ee829ff45edf2bf3b959de7e1d)
 
 ## [1.1.0] - 2017-06-06
 
