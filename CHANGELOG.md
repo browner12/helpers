@@ -6,6 +6,12 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## [UNRELEASED]
 
+## [1.1.1] - 2017-07-16
+
+### Changed
+- remove temporary variables 32a27c90ff18d1ee829ff45edf2bf3b959de7e1d
+- shorten array normalization 32a27c90ff18d1ee829ff45edf2bf3b959de7e1d
+
 ## [1.1.0] - 2017-06-06
 
 ### Added
@@ -39,7 +45,8 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 ### Added
 - new helpers package
 
-[unreleased]: https://github.com/browner12/helpers/compare/v1.1.0...HEAD
+[unreleased]: https://github.com/browner12/helpers/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/browner12/helpers/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/browner12/helpers/compare/v1.0.4...v1.1.0
 [1.0.4]: https://github.com/browner12/helpers/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/browner12/helpers/compare/v1.0.2...v1.0.3
