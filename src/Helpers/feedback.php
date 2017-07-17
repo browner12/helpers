@@ -13,15 +13,11 @@ if (!function_exists('modal')) {
      */
     function modal($title, $message, $fields = [])
     {
-        //setup
-        $modal = [
+        session()->flash('modal', [
             'title'   => $title,
             'message' => $message,
             'fields'  => $fields,
-        ];
-
-        //flash
-        session()->flash('modal', $modal);
+        ]);
     }
 }
 
@@ -38,14 +34,10 @@ if (!function_exists('alert')) {
      */
     function alert($title, $message = '', $context = 'success')
     {
-        //setup
-        $alert = [
+        session()->flash('alert', [
             'title'   => $title,
             'message' => $message,
             'context' => $context,
-        ];
-
-        //flash
-        session()->flash('alert', $alert);
+        ]);
     }
 }

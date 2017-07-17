@@ -13,9 +13,7 @@ if (!function_exists('validation_state')) {
     function validation_state(Illuminate\Support\ViewErrorBag $errors, $names, $context = 'has-danger')
     {
         //normalize input to array
-        if (!is_array($names)) {
-            $names = [$names];
-        }
+        $names = ! is_array($names) ? [$names] : $names;
 
         //check if error exists
         foreach ($names as $name) {
