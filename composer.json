@@ -26,6 +26,9 @@
         "scrutinizer/ocular": "~1.1",
         "squizlabs/php_codesniffer": "~2.3"
     },
+    "suggest": {
+        "moneyphp/money": "Money value object."
+    },
     "autoload": {
         "psr-4": {
             "browner12\\helpers\\": "src"
