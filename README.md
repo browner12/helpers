@@ -27,6 +27,8 @@ Add the service provider to the providers array in `config/app.php`.
 ];
 ```
 
+If you are using Laravel's automatic package discovery, you can skip this step.
+
 ## Publishing
 
 You can publish everything at once

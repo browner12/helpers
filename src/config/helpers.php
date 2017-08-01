@@ -7,10 +7,10 @@ return [
     | Package Helpers
     |--------------------------------------------------------------------------
     |
-    | This package comes with many pre-built helpers. Activate the ones
+    | This package comes with some pre-built helpers. Activate the ones
     | you wish to use by selecting them here. Valid options include:
     |
-    | buttons, confirm, datetime, feedback, formatter, hint, image, money, validation
+    | datetime, feedback, formatter, image, money, validation
     |
     */
 

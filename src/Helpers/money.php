@@ -5,22 +5,26 @@ if (!function_exists('money')) {
     /**
      * money
      *
-     * @param float|\browner12\money\Money $money
-     * @param string                       $currency
+     * @param float|\Money\Money $money
+     * @param string             $currency
      * @return string
      */
     function money($money, $currency = 'usd')
     {
+        //formatter
+        $numberFormatter = new \NumberFormatter('en_US', \NumberFormatter::CURRENCY);
+
         //money object
-        if ($money instanceof \browner12\money\Money) {
-            $currency = $money->getCurrency()->currency();
-            $money = $money->value();
+        if ($money instanceof \Money\Money) {
+
+            $currencies = new \Money\Currencies\ISOCurrencies();
+
+            $moneyFormatter = new \Money\Formatter\IntlMoneyFormatter($numberFormatter, $currencies);
+
+            return $moneyFormatter->format($money);
         }
 
-        //formatter
-        $cf = new NumberFormatter('eng', NumberFormatter::CURRENCY);
-
         //return
-        return $cf->formatCurrency($money, $currency);
+        return $numberFormatter->formatCurrency($money, $currency);
     }
 }
