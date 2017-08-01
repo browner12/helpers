@@ -6,6 +6,18 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## [UNRELEASED]
 
+## [2.0.0] - 2017-07-31
+
+### Added
+- added note about Laravel package discovery in setup notes [3691e3a](https://github.com/browner12/helpers/commit/3691e3a681bfba2ceb32fff037d126d41f8661dc)
+
+### Changed
+- bumped PHP minimum version to 5.6.0 [4367c03](https://github.com/browner12/helpers/commit/4367c03fd068241ace3b575ef605501a4676aa6b)
+- updated the money helper to use the [MoneyPHP Package](https://github.com/moneyphp/money) [3e1c5df](https://github.com/browner12/helpers/commit/3e1c5dfa2b9810769c85d60d9c7e561fc7a7a6de)
+
+### Removed
+- removed helpers that return HTML. these are better handled by [components](https://laravel.com/docs/5.4/blade#components-and-slots). [ec22a5f](https://github.com/browner12/helpers/commit/ec22a5f82a609511c2dec3911fedc62b71a76d76)
+
 ## [1.1.1] - 2017-07-16
 
 ### Changed
@@ -45,7 +57,8 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 ### Added
 - new helpers package
 
-[unreleased]: https://github.com/browner12/helpers/compare/v1.1.1...HEAD
+[unreleased]: https://github.com/browner12/helpers/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/browner12/helpers/compare/v1.1.1...v2.0.0
 [1.1.1]: https://github.com/browner12/helpers/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/browner12/helpers/compare/v1.0.4...v1.1.0
 [1.0.4]: https://github.com/browner12/helpers/compare/v1.0.3...v1.0.4
