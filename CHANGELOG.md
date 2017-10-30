@@ -6,6 +6,9 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## [UNRELEASED]
 
+### Changed
+- dropped support for older PHP, Laravel, and PHPUnit versions. 
+
 ## [2.0.0] - 2017-07-31
 
 ### Added
