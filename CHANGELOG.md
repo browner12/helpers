@@ -6,7 +6,9 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## [UNRELEASED]
 
-### Changed
+## [2.1.0] - 2017-10-30
+
+### Removed
 - dropped support for older PHP, Laravel, and PHPUnit versions. 
 
 ## [2.0.0] - 2017-07-31
@@ -60,7 +62,8 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 ### Added
 - new helpers package
 
-[unreleased]: https://github.com/browner12/helpers/compare/v2.0.0...HEAD
+[unreleased]: https://github.com/browner12/helpers/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/browner12/helpers/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/browner12/helpers/compare/v1.1.1...v2.0.0
 [1.1.1]: https://github.com/browner12/helpers/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/browner12/helpers/compare/v1.0.4...v1.1.0
