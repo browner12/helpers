@@ -27,7 +27,7 @@ class HelperServiceProvider extends ServiceProvider
         }
 
         //load custom helpers with a mapper
-        if (count(config('helpers.custom_helpers'))) {
+        if (config('helpers.custom_helpers') && count(config('helpers.custom_helpers'))) {
 
             foreach (config('helpers.custom_helpers') as $customHelper) {
 
