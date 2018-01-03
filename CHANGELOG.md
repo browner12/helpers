@@ -6,6 +6,11 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## [UNRELEASED]
 
+## [2.1.1] - 2018-01-03
+
+### Fixed
+- added default empty array when config value is not set. [3c1c1c4](https://github.com/browner12/helpers/commit/3c1c1c449ac3325d78878cd80a69a69faf997b6a)
+
 ## [2.1.0] - 2017-10-30
 
 ### Removed
@@ -62,7 +67,8 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 ### Added
 - new helpers package
 
-[unreleased]: https://github.com/browner12/helpers/compare/v2.1.0...HEAD
+[unreleased]: https://github.com/browner12/helpers/compare/v2.1.1...HEAD
+[2.1.1]: https://github.com/browner12/helpers/compare/v2.1.0...v2.1.1
 [2.1.0]: https://github.com/browner12/helpers/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/browner12/helpers/compare/v1.1.1...v2.0.0
 [1.1.1]: https://github.com/browner12/helpers/compare/v1.1.0...v1.1.1
