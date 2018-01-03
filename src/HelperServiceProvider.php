@@ -27,9 +27,9 @@ class HelperServiceProvider extends ServiceProvider
         }
 
         //load custom helpers with a mapper
-        if (count(config('helpers.custom_helpers'))) {
+        if (count(config('helpers.custom_helpers', []))) {
 
-            foreach (config('helpers.custom_helpers') as $customHelper) {
+            foreach (config('helpers.custom_helpers', []) as $customHelper) {
 
                 $file = app_path() . '/' . $this->getHelpersDirectory() . '/' . $customHelper . '.php';
 
