@@ -6,6 +6,11 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## [UNRELEASED]
 
+## [2.1.2] - 2018-02-08
+
+### Changed
+- support for Laravel 5.6 [#18](https://github.com/browner12/helpers/pull/18)
+
 ## [2.1.1] - 2018-01-03
 
 ### Fixed
@@ -67,7 +72,8 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 ### Added
 - new helpers package
 
-[unreleased]: https://github.com/browner12/helpers/compare/v2.1.1...HEAD
+[unreleased]: https://github.com/browner12/helpers/compare/v2.1.2...HEAD
+[2.1.2]: https://github.com/browner12/helpers/compare/v2.1.1...v2.1.2
 [2.1.1]: https://github.com/browner12/helpers/compare/v2.1.0...v2.1.1
 [2.1.0]: https://github.com/browner12/helpers/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/browner12/helpers/compare/v1.1.1...v2.0.0
