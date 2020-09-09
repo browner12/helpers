@@ -6,9 +6,14 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## [UNRELEASED]
 
+## [3.2.0] - 2020-09-09
+
+### Added
+- support for Laravel 8
+
 ## [3.1.0] - 2020-03-03
 
-###
+### Added
 - support for Laravel 7
 
 ## [3.0.0] - 2019-09-08
@@ -95,7 +100,8 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 ### Added
 - new helpers package
 
-[unreleased]: https://github.com/browner12/helpers/compare/v3.1.0...HEAD
+[unreleased]: https://github.com/browner12/helpers/compare/v3.2.0...HEAD
+[3.2.0]: https://github.com/browner12/helpers/compare/v3.1.0...v3.2.0
 [3.1.0]: https://github.com/browner12/helpers/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/browner12/helpers/compare/v2.1.4...v3.0.0
 [2.1.4]: https://github.com/browner12/helpers/compare/v2.1.3...v2.1.4
