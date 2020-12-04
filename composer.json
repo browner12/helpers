@@ -1,55 +1,55 @@
 {
-    "name": "browner12/helpers",
-    "type": "library",
-    "description": "generic helpers",
-    "keywords": [
-        "browner12",
-        "helpers"
-    ],
-    "homepage": "https://github.com/browner12/helpers",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Andrew Brown",
-            "email": "browner12@gmail.com",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php": "^7.2",
-        "illuminate/console": "^6.0|^7.0|^8.0",
-        "illuminate/contracts": "^6.0|^7.0|^8.0",
-        "illuminate/support": "^6.0|^7.0|^8.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^8.0",
-        "scrutinizer/ocular": "~1.1",
-        "squizlabs/php_codesniffer": "~2.3"
-    },
-    "suggest": {
-        "moneyphp/money": "Money value object."
-    },
-    "autoload": {
-        "psr-4": {
-            "browner12\\helpers\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "browner12\\helpers\\Test\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "phpunit"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        },
-        "laravel": {
-            "providers": [
-                "browner12\\helpers\\HelperServiceProvider"
-            ]
-        }
+  "name": "browner12/helpers",
+  "type": "library",
+  "description": "generic helpers",
+  "keywords": [
+    "browner12",
+    "helpers"
+  ],
+  "homepage": "https://github.com/browner12/helpers",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrew Brown",
+      "email": "browner12@gmail.com",
+      "role": "Developer"
     }
+  ],
+  "require": {
+    "php": "^7.2|^8.0",
+    "illuminate/console": "^6.0|^7.0|^8.0",
+    "illuminate/contracts": "^6.0|^7.0|^8.0",
+    "illuminate/support": "^6.0|^7.0|^8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0",
+    "scrutinizer/ocular": "~1.1",
+    "squizlabs/php_codesniffer": "~2.3"
+  },
+  "suggest": {
+    "moneyphp/money": "Money value object."
+  },
+  "autoload": {
+    "psr-4": {
+      "browner12\\helpers\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "browner12\\helpers\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "browner12\\helpers\\HelperServiceProvider"
+      ]
+    }
+  }
 }
