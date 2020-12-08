@@ -45,4 +45,17 @@ class HelperMakeCommand extends GeneratorCommand
     {
         return $rootNamespace . '\\' . config('helpers.directory', 'Helpers');
     }
+
+    /**
+     * Replace the function name for the given stub.
+     *
+     * @param  string  $stub
+     * @param  string  $name
+     * @return string
+     */
+    protected function replaceClass($stub, $name)
+    {
+        $class = str_replace($this->getNamespace($name) . '\\', '', $name);
+        return str_replace('DummyFunction', $class, $stub);
+    }
 }
