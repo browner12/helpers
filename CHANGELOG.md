@@ -6,6 +6,9 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## [UNRELEASED]
 
+### Added
+- support for PHP 8
+
 ## [3.2.0] - 2020-09-09
 
 ### Added
