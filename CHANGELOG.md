@@ -6,6 +6,11 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## [UNRELEASED]
 
+## [3.6.0] - 2024-03-14
+
+### Added
+- support for Laravel 11
+
 ## [3.5.0] - 2023-02-26
 
 ### Added
