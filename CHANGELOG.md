@@ -151,7 +151,8 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 - new helpers package
 
-[unreleased]: https://github.com/browner12/helpers/compare/v3.5.0...HEAD
+[unreleased]: https://github.com/browner12/helpers/compare/v3.6.0...HEAD
+[3.6.0]: https://github.com/browner12/helpers/compare/v3.5.0...v3.6.0
 [3.5.0]: https://github.com/browner12/helpers/compare/v3.4.0...v3.5.0
 [3.4.0]: https://github.com/browner12/helpers/compare/v3.3.0...v3.4.0
 [3.3.0]: https://github.com/browner12/helpers/compare/v3.2.0...v3.3.0
