@@ -6,6 +6,12 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## [UNRELEASED]
 
+## [3.7.0] - 2025-03-20
+
+### Added
+
+- support for Laravel 12
+
 ## [3.6.0] - 2024-03-14
 
 ### Added
@@ -151,7 +157,8 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 - new helpers package
 
-[unreleased]: https://github.com/browner12/helpers/compare/v3.6.0...HEAD
+[unreleased]: https://github.com/browner12/helpers/compare/v3.7.0...HEAD
+[3.7.0]: https://github.com/browner12/helpers/compare/v3.6.0...v3.7.0
 [3.6.0]: https://github.com/browner12/helpers/compare/v3.5.0...v3.6.0
 [3.5.0]: https://github.com/browner12/helpers/compare/v3.4.0...v3.5.0
 [3.4.0]: https://github.com/browner12/helpers/compare/v3.3.0...v3.4.0
